@@ -9,5 +9,6 @@ export interface ProductsType {
   free_shipping: boolean;
   rating: number;
   sold: number;
+  sale: boolean;
   date_in_stock: string;
 }

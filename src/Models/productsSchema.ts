@@ -31,6 +31,10 @@ const ProductSchema = new Schema({
     type: Schema.Types.Number,
     required: true,
   },
+  sale: {
+    type: Schema.Types.Boolean,
+    required: true,
+  },
   date_in_stock: {
     type: Schema.Types.String,
     required: true,

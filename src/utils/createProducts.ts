@@ -12,6 +12,7 @@ const productsArray: ProductsType[] = [
     free_shipping: false,
     rating: 0,
     sold: 22,
+    sale: false,
     date_in_stock: "2021-12-23",
   },
   {
@@ -22,6 +23,7 @@ const productsArray: ProductsType[] = [
     free_shipping: true,
     rating: 0,
     sold: 100,
+    sale: true,
     date_in_stock: "2024-01-20",
   },
   {
@@ -32,6 +34,7 @@ const productsArray: ProductsType[] = [
     free_shipping: false,
     rating: 0,
     sold: 53,
+    sale: false,
     date_in_stock: "2023-12-04",
   },
   {
@@ -42,6 +45,7 @@ const productsArray: ProductsType[] = [
     free_shipping: false,
     rating: 0,
     sold: 67,
+    sale: false,
     date_in_stock: "2024-07-20",
   },
   {
@@ -52,6 +56,7 @@ const productsArray: ProductsType[] = [
     free_shipping: true,
     rating: 0,
     sold: 110,
+    sale: true,
     date_in_stock: "2022-12-11",
   },
   {
@@ -62,6 +67,7 @@ const productsArray: ProductsType[] = [
     free_shipping: false,
     rating: 0,
     sold: 37,
+    sale: false,
     date_in_stock: "2023-01-12",
   },
   {
@@ -72,6 +78,7 @@ const productsArray: ProductsType[] = [
     free_shipping: true,
     rating: 0,
     sold: 76,
+    sale: false,
     date_in_stock: "2021-12-20",
   },
   {
@@ -82,6 +89,7 @@ const productsArray: ProductsType[] = [
     free_shipping: false,
     rating: 0,
     sold: 56,
+    sale: true,
     date_in_stock: "2022-02-12",
   },
   {
@@ -92,6 +100,7 @@ const productsArray: ProductsType[] = [
     free_shipping: false,
     rating: 0,
     sold: 86,
+    sale: false,
     date_in_stock: "2022-12-10",
   },
   {
@@ -102,6 +111,7 @@ const productsArray: ProductsType[] = [
     free_shipping: true,
     rating: 0,
     sold: 97,
+    sale: false,
     date_in_stock: "2022-12-10",
   },
   {
@@ -109,9 +119,10 @@ const productsArray: ProductsType[] = [
     product_image: host + "/images/white_printed_coffee_mug.jpg",
     price: 19.3,
     category: "Mug",
-    free_shipping: false,
+    free_shipping: true,
     rating: 0,
     sold: 33,
+    sale: false,
     date_in_stock: "2023-10-07",
   },
 ];
