@@ -1,7 +1,7 @@
 import { ObjectId } from "mongoose";
 
 export interface ProductsType {
-  product_id?: ObjectId;
+  _id?: ObjectId;
   product_name: String;
   product_image: string;
   price: number;
