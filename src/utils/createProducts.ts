@@ -122,7 +122,7 @@ const productsArray: ProductsType[] = [
     free_shipping: true,
     rating: 0,
     sold: 33,
-    sale: false,
+    sale: true,
     date_in_stock: "2023-10-07",
   },
 ];
