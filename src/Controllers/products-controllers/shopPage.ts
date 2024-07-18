@@ -3,7 +3,7 @@ import { ProductsType } from "@src/types";
 import { sortColumn } from "@src/utils/sortColumn";
 import { Request, Response } from "express";
 
-async function productPage(req: Request, res: Response) {
+async function shopPage(req: Request, res: Response) {
   try {
     const { page, sortOption, priceRange, selectedCategory } = req.body;
     let categoriesCount = {};
@@ -47,4 +47,4 @@ async function productPage(req: Request, res: Response) {
   }
 }
 
-export default productPage;
+export default shopPage;
