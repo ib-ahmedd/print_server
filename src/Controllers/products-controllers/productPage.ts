@@ -6,7 +6,10 @@ async function productPage(req: Request, res: Response) {
   const product = await Products.findById(id);
   const relatedProducts = await Products.find({
     category: product?.category,
-  }).limit(3);
+  })
+    .where("_id")
+    .ne(id)
+    .limit(3);
   res.json({ product, relatedProducts });
 }
 
