@@ -1,5 +1,5 @@
 import { ProductsType } from "@src/types";
-import { Schema, model } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const UsersSchema = new Schema({
   user_name: {
@@ -35,3 +35,7 @@ const UsersSchema = new Schema({
     required: true,
   },
 });
+
+const Users = model("Users", UsersSchema);
+
+export default Users;

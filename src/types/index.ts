@@ -12,3 +12,14 @@ export interface ProductsType {
   sale: boolean;
   date_in_stock: string;
 }
+
+export interface UsersType {
+  user_name: string;
+  email: string;
+  user_password: string;
+  mobile_no: number;
+  country: string;
+  state: string;
+  city: string;
+  address: string;
+}

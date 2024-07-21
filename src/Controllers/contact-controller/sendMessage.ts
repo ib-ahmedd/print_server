@@ -1,5 +1,4 @@
 import transporter from "@src/Config/NodeMailerConfig";
-import sendMail from "@src/utils/sendContactMail";
 import { Request, Response } from "express";
 
 async function sendMessage(req: Request, res: Response) {

@@ -1,5 +1,6 @@
 import app from "@src/app";
 import connectToDB from "@src/Config/DatabaseConfig";
+import Users from "@src/Models/usersSchema";
 import dotenv from "dotenv";
 dotenv.config();
 
