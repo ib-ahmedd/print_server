@@ -4,6 +4,7 @@ import productsRouter from "./Routes/productsRoutes";
 import contactRouter from "./Routes/contactRouter";
 import authRouter from "./Routes/authRouter";
 import bodyParser from "body-parser";
+import cartRouter from "./Routes/cartRoutes";
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,5 +15,6 @@ app.use(express.static("public"));
 app.use("/api/auth", authRouter);
 app.use("/api", productsRouter);
 app.use("/api", contactRouter);
+app.use("/api", cartRouter);
 
 export default app;

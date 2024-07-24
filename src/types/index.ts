@@ -23,3 +23,12 @@ export interface UsersType {
   city: string;
   address: string;
 }
+
+export interface CartItem {
+  user_id: string;
+  product_id: string;
+  product_name: string;
+  product_image: string;
+  product_price: number;
+  quantity: number;
+}

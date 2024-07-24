@@ -1,5 +1,7 @@
 import app from "@src/app";
 import connectToDB from "@src/Config/DatabaseConfig";
+import Cart from "@src/Models/cartSchema";
+import Products from "@src/Models/productsSchema";
 import Users from "@src/Models/usersSchema";
 import dotenv from "dotenv";
 dotenv.config();

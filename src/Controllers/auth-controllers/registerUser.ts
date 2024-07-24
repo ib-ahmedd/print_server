@@ -8,7 +8,6 @@ dotenv.config();
 
 async function registerUser(req: Request, res: Response) {
   try {
-    console.log(req.body);
     const {
       user_name,
       email,
