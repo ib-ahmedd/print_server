@@ -5,8 +5,10 @@ import { Request, Response } from "express";
 async function verifyOTP(req: Request, res: Response) {
   try {
     const { email, code } = req.body;
+
     const response = await OTPs.findOne({ email: email, code: code });
     if (response) {
+      OTPs.deleteMany({ email: email });
       const authToken = generateToken(
         { user: email },
         process.env.AUTH_TOKEN_SECRET

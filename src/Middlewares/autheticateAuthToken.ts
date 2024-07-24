@@ -13,7 +13,7 @@ const authenticateAuthToken = (
 
   jsonwebtoken.verify(
     token ? token : "",
-    process.env.ACCESS_TOKEN_SECRET ? process.env.ACCESS_TOKEN_SECRET : "",
+    process.env.AUTH_TOKEN_SECRET ? process.env.AUTH_TOKEN_SECRET : "",
     (err) => {
       if (err) {
         console.log(err);
