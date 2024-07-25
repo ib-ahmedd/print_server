@@ -2,18 +2,9 @@ import Cart from "@src/Models/cartSchema";
 import { CartItem } from "@src/types";
 import { Request, Response } from "express";
 
-async function addToCart(req: Request, res: Response) {
+async function updateCart(req: Request, res: Response) {
   try {
-    const {
-      user_id,
-      product_id,
-      product_name,
-      product_image,
-      product_price,
-      quantity,
-    }: CartItem = req.body;
-
-    // await Cart.deleteMany();
+    const { user_id, product_id, quantity }: CartItem = req.body;
 
     const itemInCart = await Cart.findOne({
       user_id: user_id,
@@ -26,17 +17,6 @@ async function addToCart(req: Request, res: Response) {
       itemInCart.quantity = newQuantity;
       itemInCart.save();
       res.json(itemInCart);
-    } else {
-      const cartItem = new Cart({
-        user_id,
-        product_id,
-        product_name,
-        product_image,
-        product_price,
-        quantity,
-      });
-      await cartItem.save();
-      res.json(cartItem);
     }
   } catch (err) {
     console.log(err);
@@ -44,4 +24,4 @@ async function addToCart(req: Request, res: Response) {
   }
 }
 
-export default addToCart;
+export default updateCart;
