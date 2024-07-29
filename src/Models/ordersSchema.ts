@@ -1,3 +1,4 @@
+import { orders } from "@src/types";
 import { model, Schema } from "mongoose";
 
 const OrdersSchema = new Schema({
@@ -35,4 +36,6 @@ const OrdersSchema = new Schema({
   },
 });
 
-const Orders = model("Orders", OrdersSchema);
+const Orders = model<orders>("Orders", OrdersSchema);
+
+export default Orders;
