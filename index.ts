@@ -11,6 +11,7 @@ const port = 4000;
 async function main() {
   try {
     await connectToDB();
+    // await Cart.deleteMany();
     app.listen(port, () => {
       console.log(`server running on port:${port}`);
     });

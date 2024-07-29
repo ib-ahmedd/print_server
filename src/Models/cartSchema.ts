@@ -21,7 +21,7 @@ const CartSchema = new Schema({
     type: Schema.Types.String,
     required: true,
   },
-  product_price: {
+  price: {
     type: Schema.Types.Number,
     required: true,
   },

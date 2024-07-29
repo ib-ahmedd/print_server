@@ -25,10 +25,11 @@ export interface UsersType {
 }
 
 export interface CartItem {
+  _id?: string;
   user_id: string;
   product_id: string;
   product_name: string;
   product_image: string;
-  product_price: number;
+  price: number;
   quantity: number;
 }

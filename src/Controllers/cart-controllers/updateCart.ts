@@ -4,19 +4,15 @@ import { Request, Response } from "express";
 
 async function updateCart(req: Request, res: Response) {
   try {
-    const { user_id, product_id, quantity }: CartItem = req.body;
+    const { _id, quantity }: CartItem = req.body;
 
     const itemInCart = await Cart.findOne({
-      user_id: user_id,
-      product_id: product_id,
+      _id: _id,
     });
     if (itemInCart) {
-      const newQuantity =
-        parseInt(itemInCart.quantity.toString()) +
-        parseInt(quantity.toString());
-      itemInCart.quantity = newQuantity;
+      itemInCart.quantity = quantity;
       itemInCart.save();
-      res.json(itemInCart);
+      res.sendStatus(204);
     }
   } catch (err) {
     console.log(err);

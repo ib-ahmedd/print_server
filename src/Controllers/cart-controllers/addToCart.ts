@@ -9,11 +9,9 @@ async function addToCart(req: Request, res: Response) {
       product_id,
       product_name,
       product_image,
-      product_price,
+      price,
       quantity,
     }: CartItem = req.body;
-
-    // await Cart.deleteMany();
 
     const itemInCart = await Cart.findOne({
       user_id: user_id,
@@ -23,6 +21,7 @@ async function addToCart(req: Request, res: Response) {
       const newQuantity =
         parseInt(itemInCart.quantity.toString()) +
         parseInt(quantity.toString());
+
       itemInCart.quantity = newQuantity;
       itemInCart.save();
       res.json(itemInCart);
@@ -32,7 +31,7 @@ async function addToCart(req: Request, res: Response) {
         product_id,
         product_name,
         product_image,
-        product_price,
+        price,
         quantity,
       });
       await cartItem.save();

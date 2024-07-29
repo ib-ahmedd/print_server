@@ -6,7 +6,7 @@ import { Router } from "express";
 
 const cartRouter = Router();
 
-cartRouter.get("/get-cart-items/:id", getCartItems);
+cartRouter.get("/get-items/:id", getCartItems);
 cartRouter.post("/add-item", addToCart);
 cartRouter.patch("/update-cart", updateCart);
 cartRouter.delete("/delete-item/:id", deleteCartItem);
