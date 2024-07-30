@@ -34,7 +34,7 @@ export interface CartItem {
   quantity: number;
 }
 
-export interface orders {
+export interface OrdersType {
   _id?: string;
   user_id: string;
   product_id: string;
@@ -44,4 +44,5 @@ export interface orders {
   quantity: number;
   delivered: boolean;
   reviewed: boolean;
+  date_ordered: string;
 }

@@ -1,4 +1,4 @@
-import { orders } from "@src/types";
+import { OrdersType } from "@src/types";
 import { model, Schema } from "mongoose";
 
 const OrdersSchema = new Schema({
@@ -26,6 +26,10 @@ const OrdersSchema = new Schema({
     type: Schema.Types.Number,
     required: true,
   },
+  date_ordered: {
+    type: Schema.Types.String,
+    required: true,
+  },
   delivered: {
     type: Schema.Types.Boolean,
     required: true,
@@ -36,6 +40,6 @@ const OrdersSchema = new Schema({
   },
 });
 
-const Orders = model<orders>("Orders", OrdersSchema);
+const Orders = model<OrdersType>("Orders", OrdersSchema);
 
 export default Orders;
