@@ -46,3 +46,11 @@ export interface OrdersType {
   reviewed: boolean;
   date_ordered: string;
 }
+
+export interface Review {
+  product_id: string;
+  user_id: string;
+  rating: number;
+  review_title: string;
+  review: string;
+}
