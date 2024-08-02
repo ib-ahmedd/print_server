@@ -11,11 +11,12 @@ async function addOrder(req: Request, res: Response) {
       let number = 1;
       if (number % 2 === 0) {
         item.delivered = false;
+        number = number + 1;
       } else {
         item.delivered = true;
+        number = number + 1;
       }
       item.reviewed = false;
-      number = number + 1;
       item.date_ordered = dateFormat();
       return item;
     });

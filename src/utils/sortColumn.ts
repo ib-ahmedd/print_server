@@ -12,7 +12,7 @@ export function sortColumn(option: string) {
     }
 
     case "Sort by average rating": {
-      sort = { rating: 1 };
+      sort = { rating: -1 };
       break;
     }
 
