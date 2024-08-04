@@ -1,4 +1,4 @@
-import { Review } from "@src/types";
+import { Review } from "../types";
 
 function findMean(array: Review[]): number {
   const count = array.length;

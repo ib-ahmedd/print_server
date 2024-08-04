@@ -1,9 +1,9 @@
-import loginUser from "@src/Controllers/auth-controllers/loginUser";
-import registerUser from "@src/Controllers/auth-controllers/registerUser";
-import requestOtp from "@src/Controllers/auth-controllers/requestOTP";
-import resetPassword from "@src/Controllers/auth-controllers/resetPassword";
-import verifyOTP from "@src/Controllers/auth-controllers/verifyOTP";
-import authenticateAuthToken from "@src/Middlewares/autheticateAuthToken";
+import loginUser from "../Controllers/auth-controllers/loginUser";
+import registerUser from "../Controllers/auth-controllers/registerUser";
+import requestOtp from "../Controllers/auth-controllers/requestOTP";
+import resetPassword from "../Controllers/auth-controllers/resetPassword";
+import verifyOTP from "../Controllers/auth-controllers/verifyOTP";
+import authenticateAuthToken from "../Middlewares/autheticateAuthToken";
 import { Router } from "express";
 
 const authRouter = Router();

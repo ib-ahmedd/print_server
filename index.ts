@@ -1,7 +1,6 @@
 import app from "./src/app";
-import connectToDB from "@src/Config/DatabaseConfig";
-import dotenv from "dotenv";
-dotenv.config();
+import connectToDB from "./src/Config/DatabaseConfig";
+import "dotenv/config";
 
 const port = 4000;
 
