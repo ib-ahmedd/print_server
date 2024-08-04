@@ -1,4 +1,5 @@
 import Products from "@src/Models/productsSchema";
+import Reviews from "@src/Models/reviewsSchema";
 import { Request, Response } from "express";
 
 async function productPage(req: Request, res: Response) {
@@ -10,7 +11,8 @@ async function productPage(req: Request, res: Response) {
     .where("_id")
     .ne(id)
     .limit(3);
-  res.json({ product, relatedProducts });
+  const comments = await Reviews.find({ product_id: id });
+  res.json({ product, relatedProducts, comments });
 }
 
 export default productPage;

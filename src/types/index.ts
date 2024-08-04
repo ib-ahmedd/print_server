@@ -53,4 +53,6 @@ export interface Review {
   rating: number;
   review_title: string;
   review: string;
+  date_reviewed: string;
+  reviewer_name: string;
 }

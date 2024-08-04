@@ -10,6 +10,10 @@ const ReviewsSchema = new Schema({
     type: Schema.Types.ObjectId,
     required: true,
   },
+  reviewer_name: {
+    type: Schema.Types.String,
+    required: true,
+  },
   rating: {
     type: Schema.Types.Number,
     required: true,
@@ -21,6 +25,10 @@ const ReviewsSchema = new Schema({
   review: {
     type: Schema.Types.String,
     maxLength: 50,
+  },
+  date_reviewed: {
+    type: Schema.Types.String,
+    required: true,
   },
 });
 
