@@ -1,6 +1,6 @@
-import transporter from "@src/Config/NodeMailerConfig";
-import OTPs from "@src/Models/OTPsSchema";
-import Users from "@src/Models/usersSchema";
+import transporter from "../../Config/NodeMailerConfig";
+import OTPs from "../../Models/OTPsSchema";
+import Users from "../../Models/usersSchema";
 import { Request, Response } from "express";
 
 async function requestOtp(req: Request, res: Response) {

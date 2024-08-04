@@ -1,5 +1,5 @@
-import Products from "@src/Models/productsSchema";
-import { ProductsType } from "@src/types";
+import Products from "../../Models/productsSchema";
+import { ProductsType } from "../../types";
 import { Request, Response } from "express";
 
 async function mostLoved(req: Request, res: Response) {

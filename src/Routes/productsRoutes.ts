@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-import featuredProducts from "@src/Controllers/products-controllers/featuredProducts";
-import mostLoved from "@src/Controllers/products-controllers/mostLoved";
-import shopPage from "@src/Controllers/products-controllers/shopPage";
-import productPage from "@src/Controllers/products-controllers/productPage";
+import featuredProducts from "../Controllers/products-controllers/featuredProducts";
+import mostLoved from "../Controllers/products-controllers/mostLoved";
+import shopPage from "../Controllers/products-controllers/shopPage";
+import productPage from "../Controllers/products-controllers/productPage";
 
 const productsRouter = Router();
 

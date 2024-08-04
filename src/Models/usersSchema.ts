@@ -1,4 +1,3 @@
-import { ProductsType } from "@src/types";
 import { Schema, model, models } from "mongoose";
 
 const UsersSchema = new Schema({

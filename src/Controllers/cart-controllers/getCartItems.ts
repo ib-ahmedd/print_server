@@ -1,4 +1,4 @@
-import Cart from "@src/Models/cartSchema";
+import Cart from "../../Models/cartSchema";
 import { Request, Response } from "express";
 
 async function getCartItems(req: Request, res: Response) {

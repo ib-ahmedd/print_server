@@ -1,5 +1,5 @@
-import generateToken from "@src/Helpers/generateToken";
-import Users from "@src/Models/usersSchema";
+import generateToken from "../../Helpers/generateToken";
+import Users from "../../Models/usersSchema";
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import "dotenv/config";

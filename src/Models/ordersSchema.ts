@@ -1,4 +1,4 @@
-import { OrdersType } from "@src/types";
+import { OrdersType } from "../types";
 import { model, Schema } from "mongoose";
 
 const OrdersSchema = new Schema({

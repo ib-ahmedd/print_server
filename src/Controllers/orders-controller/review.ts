@@ -1,8 +1,8 @@
-import Orders from "@src/Models/ordersSchema";
-import Products from "@src/Models/productsSchema";
-import Reviews from "@src/Models/reviewsSchema";
-import dateFormat from "@src/utils/dateFormat";
-import findMean from "@src/utils/findMean";
+import Orders from "../../Models/ordersSchema";
+import Products from "../../Models/productsSchema";
+import Reviews from "../../Models/reviewsSchema";
+import dateFormat from "../../utils/dateFormat";
+import findMean from "../../utils/findMean";
 import { Request, Response } from "express";
 
 async function review(req: Request, res: Response) {

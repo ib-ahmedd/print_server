@@ -1,5 +1,5 @@
-import Cart from "@src/Models/cartSchema";
-import { CartItem } from "@src/types";
+import Cart from "../../Models/cartSchema";
+import { CartItem } from "../../types";
 import { Request, Response } from "express";
 
 async function updateCart(req: Request, res: Response) {

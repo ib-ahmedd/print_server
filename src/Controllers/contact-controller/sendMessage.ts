@@ -1,4 +1,4 @@
-import transporter from "@src/Config/NodeMailerConfig";
+import transporter from "../../Config/NodeMailerConfig";
 import { Request, Response } from "express";
 
 async function sendMessage(req: Request, res: Response) {

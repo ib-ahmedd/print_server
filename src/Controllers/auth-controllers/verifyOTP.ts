@@ -1,5 +1,5 @@
-import generateToken from "@src/Helpers/generateToken";
-import OTPs from "@src/Models/OTPsSchema";
+import generateToken from "../../Helpers/generateToken";
+import OTPs from "../../Models/OTPsSchema";
 import { Request, Response } from "express";
 
 async function verifyOTP(req: Request, res: Response) {

@@ -1,5 +1,5 @@
-import Products from "@src/Models/productsSchema";
-import Reviews from "@src/Models/reviewsSchema";
+import Products from "../../Models/productsSchema";
+import Reviews from "../../Models/reviewsSchema";
 import { Request, Response } from "express";
 
 async function productPage(req: Request, res: Response) {

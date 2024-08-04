@@ -1,4 +1,4 @@
-import { Review } from "@src/types";
+import { Review } from "../types";
 import { Schema, model } from "mongoose";
 
 const ReviewsSchema = new Schema({

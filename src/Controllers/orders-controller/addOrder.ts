@@ -1,7 +1,7 @@
-import Cart from "@src/Models/cartSchema";
-import Orders from "@src/Models/ordersSchema";
-import { OrdersType } from "@src/types";
-import dateFormat from "@src/utils/dateFormat";
+import Cart from "../../Models/cartSchema";
+import Orders from "../../Models/ordersSchema";
+import { OrdersType } from "../../types";
+import dateFormat from "../../utils/dateFormat";
 import { Request, Response } from "express";
 
 async function addOrder(req: Request, res: Response) {

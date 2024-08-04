@@ -1,8 +1,8 @@
-import { UsersType } from "@src/types";
+import { UsersType } from "../../types";
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
-import Users from "@src/Models/usersSchema";
-import generateToken from "@src/Helpers/generateToken";
+import Users from "../../Models/usersSchema";
+import generateToken from "../../Helpers/generateToken";
 import dotenv from "dotenv";
 dotenv.config();
 

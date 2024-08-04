@@ -1,10 +1,10 @@
-import addOrder from "@src/Controllers/orders-controller/addOrder";
-import getOrders from "@src/Controllers/orders-controller/getOrders";
-import orderDetails from "@src/Controllers/orders-controller/orderDetails";
-import pendingReviews from "@src/Controllers/orders-controller/pendingReviews";
-import review from "@src/Controllers/orders-controller/review";
-import reviewItem from "@src/Controllers/orders-controller/reviewItem";
-import authenticateAccess from "@src/Middlewares/authenticateAccessToken";
+import addOrder from "../Controllers/orders-controller/addOrder";
+import getOrders from "../Controllers/orders-controller/getOrders";
+import orderDetails from "../Controllers/orders-controller/orderDetails";
+import pendingReviews from "../Controllers/orders-controller/pendingReviews";
+import review from "../Controllers/orders-controller/review";
+import reviewItem from "../Controllers/orders-controller/reviewItem";
+import authenticateAccess from "../Middlewares/authenticateAccessToken";
 import { Router } from "express";
 
 const ordersRouter = Router();

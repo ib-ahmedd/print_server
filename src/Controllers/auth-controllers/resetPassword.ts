@@ -1,4 +1,4 @@
-import Users from "@src/Models/usersSchema";
+import Users from "../../Models/usersSchema";
 import bcrypt from "bcrypt";
 import { Request, Response } from "express";
 

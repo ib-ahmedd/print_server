@@ -1,4 +1,4 @@
-import Orders from "@src/Models/ordersSchema";
+import Orders from "../../Models/ordersSchema";
 import { Request, Response } from "express";
 
 async function pendingReviews(req: Request, res: Response) {

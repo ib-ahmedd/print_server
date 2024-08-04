@@ -1,7 +1,7 @@
-import addToCart from "@src/Controllers/cart-controllers/addToCart";
-import deleteCartItem from "@src/Controllers/cart-controllers/deleteCartItem";
-import getCartItems from "@src/Controllers/cart-controllers/getCartItems";
-import updateCart from "@src/Controllers/cart-controllers/updateCart";
+import addToCart from "../Controllers/cart-controllers/addToCart";
+import deleteCartItem from "../Controllers/cart-controllers/deleteCartItem";
+import getCartItems from "../Controllers/cart-controllers/getCartItems";
+import updateCart from "../Controllers/cart-controllers/updateCart";
 import authenticateAccess from "@src/Middlewares/authenticateAccessToken";
 import { Router } from "express";
 

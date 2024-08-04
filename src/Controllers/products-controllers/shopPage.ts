@@ -1,6 +1,6 @@
-import Products from "@src/Models/productsSchema";
-import { ProductsType } from "@src/types";
-import { sortColumn } from "@src/utils/sortColumn";
+import Products from "../../Models/productsSchema";
+import { ProductsType } from "../../types";
+import { sortColumn } from "../../utils/sortColumn";
 import { Request, Response } from "express";
 
 async function shopPage(req: Request, res: Response) {
