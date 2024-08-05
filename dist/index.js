@@ -20,6 +20,8 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             yield (0, DatabaseConfig_1.default)();
+            // await Products.deleteMany();
+            // await createProducts();
             app_1.default.listen(port, () => {
                 console.log(`server running on port:${port}`);
             });

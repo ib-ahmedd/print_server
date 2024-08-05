@@ -6,7 +6,8 @@ const host = "http://localhost:4000";
 const productsArray: ProductsType[] = [
   {
     product_name: "Black Printed Coffee Mug",
-    product_image: host + "/images/black_printed_coffee_mug.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862109/black_printed_coffee_mug_xrmkbl.jpg",
     price: 15.5,
     category: "Mug",
     free_shipping: false,
@@ -17,7 +18,8 @@ const productsArray: ProductsType[] = [
   },
   {
     product_name: "Brown Printed Tshirt",
-    product_image: host + "/images/brown_printed_tshirt.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862225/brown_printed_tshirt_gky1i0.jpg",
     price: 25.3,
     category: "Tshirt",
     free_shipping: true,
@@ -27,8 +29,9 @@ const productsArray: ProductsType[] = [
     date_in_stock: "2024-01-20",
   },
   {
-    product_name: "Brown Printed Tshirt",
-    product_image: host + "/images/brown_printed_tshirt.jpg",
+    product_name: "Orange Printed Tshirt",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862225/orange_printed_tshirt_bq5wsa.jpg",
     price: 22.4,
     category: "Tshirt",
     free_shipping: false,
@@ -39,7 +42,8 @@ const productsArray: ProductsType[] = [
   },
   {
     product_name: "Dark Green Printed Tshirt",
-    product_image: host + "/images/dark_green_printed_tshirt.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862225/dark_green_printed_tshirt_u1dyzv.jpg",
     price: 21.2,
     category: "Tshirt",
     free_shipping: false,
@@ -50,7 +54,8 @@ const productsArray: ProductsType[] = [
   },
   {
     product_name: "Fathers Day Coffee Mug",
-    product_image: host + "/images/fathers_day_coffee_mug.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862225/fathers_day_coffee_mug_gpupp9.jpg",
     price: 17.9,
     category: "Mug",
     free_shipping: true,
@@ -60,8 +65,9 @@ const productsArray: ProductsType[] = [
     date_in_stock: "2022-12-11",
   },
   {
-    product_name: "Green Printed Tshirt",
-    product_image: host + "/images/green_printed_tshirt.jpg",
+    product_name: "Blue Printed Tshirt",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862225/green_printed_tshirt_q9xu02.jpg",
     price: 23.4,
     category: "Tshirt",
     free_shipping: false,
@@ -70,9 +76,23 @@ const productsArray: ProductsType[] = [
     sale: false,
     date_in_stock: "2023-01-12",
   },
+
+  {
+    product_name: "Navy Blue Printed Tshirt",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862225/dark_blue_printed_tshirt_ppuw9z.jpg",
+    price: 14.7,
+    category: "Tshirt",
+    free_shipping: true,
+    rating: 0,
+    sold: 76,
+    sale: false,
+    date_in_stock: "2021-12-20",
+  },
   {
     product_name: "Orange Printed Tshirt",
-    product_image: host + "/images/orange_printed_tshirt.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862225/orange_printed_tshirt_bq5wsa.jpg",
     price: 14.7,
     category: "Tshirt",
     free_shipping: true,
@@ -83,7 +103,8 @@ const productsArray: ProductsType[] = [
   },
   {
     product_name: "Personalised Mug",
-    product_image: host + "/images/personalised_mug.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862274/personalised_mug_blf2bt.jpg",
     price: 25,
     category: "Mug",
     free_shipping: false,
@@ -94,7 +115,8 @@ const productsArray: ProductsType[] = [
   },
   {
     product_name: "Pink Printed Tshirt",
-    product_image: host + "/images/pink_printed_tshirt.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862275/pink_printed_tshirt_lnctbm.jpg",
     price: 15,
     category: "Tshirt",
     free_shipping: false,
@@ -105,7 +127,8 @@ const productsArray: ProductsType[] = [
   },
   {
     product_name: "Valentines Day Special Mug",
-    product_image: host + "/images/valentines_day_special_mug.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862276/valentines_day_special_mug_j3bbfu.jpg",
     price: 18.2,
     category: "Mug",
     free_shipping: true,
@@ -116,7 +139,8 @@ const productsArray: ProductsType[] = [
   },
   {
     product_name: "White Printed Coffee Mug",
-    product_image: host + "/images/white_printed_coffee_mug.jpg",
+    product_image:
+      "https://res.cloudinary.com/djnzi39nh/image/upload/v1722862227/white_printed_coffee_mug_thxfie.jpg",
     price: 19.3,
     category: "Mug",
     free_shipping: true,
