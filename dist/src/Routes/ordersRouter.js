@@ -1,0 +1,21 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const addOrder_1 = __importDefault(require("../Controllers/orders-controller/addOrder"));
+const getOrders_1 = __importDefault(require("../Controllers/orders-controller/getOrders"));
+const orderDetails_1 = __importDefault(require("../Controllers/orders-controller/orderDetails"));
+const pendingReviews_1 = __importDefault(require("../Controllers/orders-controller/pendingReviews"));
+const review_1 = __importDefault(require("../Controllers/orders-controller/review"));
+const reviewItem_1 = __importDefault(require("../Controllers/orders-controller/reviewItem"));
+const authenticateAccessToken_1 = __importDefault(require("../Middlewares/authenticateAccessToken"));
+const express_1 = require("express");
+const ordersRouter = (0, express_1.Router)();
+ordersRouter.get("/get-orders/:id", authenticateAccessToken_1.default, getOrders_1.default);
+ordersRouter.get("/pending-reviews/:id", authenticateAccessToken_1.default, pendingReviews_1.default);
+ordersRouter.get("/review-item/:id", authenticateAccessToken_1.default, reviewItem_1.default);
+ordersRouter.get("/order/:id", authenticateAccessToken_1.default, orderDetails_1.default);
+ordersRouter.post("/add-orders", authenticateAccessToken_1.default, addOrder_1.default);
+ordersRouter.post("/review", authenticateAccessToken_1.default, review_1.default);
+exports.default = ordersRouter;
