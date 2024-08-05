@@ -1,5 +1,5 @@
-import Products from "@src/Models/productsSchema";
-import { ProductsType } from "@src/types";
+import Products from "../Models/productsSchema";
+import { ProductsType } from "../types";
 
 const host = "http://localhost:4000";
 
